@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Multishots )
+find_package( OpenCV REQUIRED )
+add_executable( 123p main.cpp  descriptor.h descriptor.cpp gauss.h gauss.cpp histdescriptor.h  histdescriptor.cpp ReidDescriptor.h ReidDescriptor.cpp watershed.h watershed.cpp )
+target_link_libraries(123p ${OpenCV_LIBS} )
